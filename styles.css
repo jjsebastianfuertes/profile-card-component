@@ -1,0 +1,113 @@
+@import url("https://fonts.google.com/specimen/Kumbh+Sans");
+body {
+  min-height: 100vh;
+  position: relative;
+  display: grid;
+  background-color: hsl(185, 75%, 39%);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 0;
+}
+.bubble {
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.bubble--left {
+  background-image: url("./assets/bg-pattern-top.svg");
+  background-position: calc(0% - 10rem) calc(0% - 25rem);
+}
+.bubble--right {
+  background-image: url("./assets/bg-pattern-bottom.svg");
+  background-position: calc(100% + 10rem) calc(100% + 25rem);
+}
+.card-profile {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 2rem;
+  background-color: #fff;
+  box-shadow: 1px 1px 8px 4px hsl(0deg 0% 59% / 18%);
+}
+.profile-header {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  border-radius: 2rem 2rem 0 0;
+  background-image: url("./assets/bg-pattern-card.svg");
+  background-size: 100% 50%;
+  background-repeat: no-repeat;
+  padding: 5rem 6rem 1rem;
+}
+.profile-header__img {
+  border-radius: 100%;
+  border: 4px solid #fff;
+}
+.profile-header__name {
+  color: hsl(229, 23%, 23%);
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 1rem 0;
+}
+.profile-header--age {
+  color: hsl(227, 10%, 46%);
+  font-weight: 400;
+}
+.profile-header__city {
+  color: hsl(227, 10%, 46%);
+  margin: 0;
+  font-size: 14px;
+  text-align: center;
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 400;
+}
+.statistics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  justify-content: center;
+  padding: 1rem;
+}
+.statistic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.statistic h4 {
+  color: hsl(227, 10%, 46%);
+  margin: 0;
+  font-size: 12px;
+  text-align: center;
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 200;
+}
+.statistic p {
+  color: hsl(229, 23%, 23%);
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 5px;
+}
+hr {
+  border-top: none;
+}
+
+@media (max-width: 375px) {
+  body {
+    grid-template-columns: 1fr;
+  }
+  .bubble {
+    background-size: 200%;
+  }
+  .bubble--left {
+    background-image: url("./assets/bg-pattern-top.svg");
+    background-position: calc(100% - 10rem) calc(0% - 25rem);
+  }
+  .bubble--right {
+    background-position: calc(0% + 10rem) calc(100% + 25rem);
+  }
+}
