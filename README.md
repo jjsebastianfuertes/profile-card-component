@@ -10,6 +10,11 @@ Create an card component profile with basic HTML and CSS
 
 ### Screenshot
 
+<img width="1792" alt="desktop" src="https://user-images.githubusercontent.com/26838420/114294160-37e29200-9a62-11eb-89a0-899f41ae40c7.png">
+
+<img width="1792" alt="mobile" src="https://user-images.githubusercontent.com/26838420/114294168-4c268f00-9a62-11eb-8db9-4fb64c4ed713.png">
+
+
 ### Links
 
 - Live Site URL: [CARD PROFILE](https://jjsebastianfuertes.github.io/profile-card-component/)
